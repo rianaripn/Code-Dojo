@@ -1,0 +1,173 @@
+[
+  {
+    "id": "1",
+    "title": "Thinking in React",
+    "tagline": "The official mental model for breaking UI into a component tree.",
+    "source": "react.dev",
+    "source_link": "https://react.dev/learn/thinking-in-react",
+    "rank": "kohai",
+    "training_time": 25,
+    "category": "react"
+  },
+  {
+    "id": "2",
+    "title": "useState: Managing Component State",
+    "tagline": "Learn how to add and update local state inside your React components.",
+    "source": "react.dev",
+    "source_link": "https://react.dev/reference/react/useState",
+    "rank": "kohai",
+    "training_time": 30,
+    "category": "react"
+  },
+  {
+    "id": "3",
+    "title": "useEffect In Depth",
+    "tagline": "Master side effects, dependencies, and cleanup in functional components.",
+    "source": "react.dev",
+    "source_link": "https://react.dev/learn/synchronizing-with-effects",
+    "rank": "senpai",
+    "training_time": 45,
+    "category": "react"
+  },
+  {
+    "id": "4",
+    "title": "React Router v6 Official Docs",
+    "tagline": "The complete guide to client-side routing in modern React applications.",
+    "source": "reactrouter.com",
+    "source_link": "https://reactrouter.com/en/main",
+    "rank": "senpai",
+    "training_time": 60,
+    "category": "react"
+  },
+  {
+    "id": "5",
+    "title": "A Complete Guide to Flexbox",
+    "tagline": "Everything you need to know about Flexbox, with visual examples.",
+    "source": "css-tricks.com",
+    "source_link": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+    "rank": "kohai",
+    "training_time": 40,
+    "category": "css"
+  },
+  {
+    "id": "6",
+    "title": "A Complete Guide to CSS Grid",
+    "tagline": "Master two-dimensional layouts with this comprehensive CSS Grid reference.",
+    "source": "css-tricks.com",
+    "source_link": "https://css-tricks.com/snippets/css/complete-guide-grid/",
+    "rank": "kohai",
+    "training_time": 45,
+    "category": "css"
+  },
+  {
+    "id": "7",
+    "title": "Responsive Design in CSS",
+    "tagline": "Build layouts that adapt to any screen size using media queries.",
+    "source": "developer.mozilla.org",
+    "source_link": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design",
+    "rank": "kohai",
+    "training_time": 35,
+    "category": "css"
+  },
+  {
+    "id": "8",
+    "title": "CSS Custom Properties (Variables)",
+    "tagline": "Use CSS variables to build consistent, themeable design systems.",
+    "source": "developer.mozilla.org",
+    "source_link": "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties",
+    "rank": "senpai",
+    "training_time": 30,
+    "category": "css"
+  },
+  {
+    "id": "9",
+    "title": "JavaScript.info — The Modern JS Tutorial",
+    "tagline": "From beginner to advanced — the most complete JS tutorial on the internet.",
+    "source": "javascript.info",
+    "source_link": "https://javascript.info/",
+    "rank": "kohai",
+    "training_time": 120,
+    "category": "javascript"
+  },
+  {
+    "id": "10",
+    "title": "Async/Await & Promises Explained",
+    "tagline": "Finally understand asynchronous JavaScript without losing your mind.",
+    "source": "javascript.info",
+    "source_link": "https://javascript.info/async-await",
+    "rank": "senpai",
+    "training_time": 40,
+    "category": "javascript"
+  },
+  {
+    "id": "11",
+    "title": "Array Methods You Must Know",
+    "tagline": "map, filter, reduce — the trio that transforms how you manipulate data.",
+    "source": "developer.mozilla.org",
+    "source_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "rank": "kohai",
+    "training_time": 35,
+    "category": "javascript"
+  },
+  {
+    "id": "12",
+    "title": "Event Loop: How JS Really Works",
+    "tagline": "Understand the call stack, web APIs, and microtask queue under the hood.",
+    "source": "youtube.com",
+    "source_link": "https://www.youtube.com/watch?v=8aGhZQkoFbQ",
+    "rank": "sensei",
+    "training_time": 30,
+    "category": "javascript"
+  },
+  {
+    "id": "13",
+    "title": "Node.js Official Getting Started",
+    "tagline": "Run JavaScript on the server — set up your first Node.js project today.",
+    "source": "nodejs.org",
+    "source_link": "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs",
+    "rank": "kohai",
+    "training_time": 30,
+    "category": "nodejs"
+  },
+  {
+    "id": "14",
+    "title": "Build a REST API with Express.js",
+    "tagline": "Create your first backend API with routes, middleware, and JSON responses.",
+    "source": "expressjs.com",
+    "source_link": "https://expressjs.com/en/starter/hello-world.html",
+    "rank": "senpai",
+    "training_time": 60,
+    "category": "nodejs"
+  },
+  {
+    "id": "15",
+    "title": "JWT Authentication Explained",
+    "tagline": "Secure your API with JSON Web Tokens — from theory to implementation.",
+    "source": "jwt.io",
+    "source_link": "https://jwt.io/introduction",
+    "rank": "sensei",
+    "training_time": 45,
+    "category": "nodejs"
+  },
+  {
+        "id" : "16",
+        "title" : "Thinking in Components",
+        "tagline" : "The fundamental mental model. Break a UI into a tree of small, reusable pieces — and learn to see every interface this way.",
+        "source" : "react.dev",
+        "source_link" : "https://react.dev/" ,
+        "rank" : "Kohai" ,
+        "training_time" : 25 ,
+        "category" : "react"
+    },
+    {
+        "id" : "17",
+        "title" : "Flexbox Mastery",
+        "tagline" : "One axis at a time. Internalize the model and stop guessing which property does what.",
+        "source" : "css-tricks.com",
+        "source_link" : "https://css-tricks.com/" ,
+        "rank" : "Kohai" ,
+        "training_time" : 40 ,
+        "category" : "css"
+    }
+]
+

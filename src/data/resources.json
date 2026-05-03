@@ -37,7 +37,8 @@
     "source_link": "https://reactrouter.com/en/main",
     "rank": "senpai",
     "training_time": 60,
-    "category": "react"
+    "category": "react",
+    "isFeatured" : true
   },
   {
     "id": "5",
@@ -77,7 +78,8 @@
     "source_link": "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties",
     "rank": "senpai",
     "training_time": 30,
-    "category": "css"
+    "category": "css",
+    "isFeatured" : true
   },
   {
     "id": "9",
@@ -97,7 +99,8 @@
     "source_link": "https://javascript.info/async-await",
     "rank": "senpai",
     "training_time": 40,
-    "category": "javascript"
+    "category": "javascript",
+    "isFeatured" : true
   },
   {
     "id": "11",
@@ -107,7 +110,8 @@
     "source_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
     "rank": "kohai",
     "training_time": 35,
-    "category": "javascript"
+    "category": "javascript",
+    "isFeatured" : true
   },
   {
     "id": "12",
@@ -137,7 +141,8 @@
     "source_link": "https://expressjs.com/en/starter/hello-world.html",
     "rank": "senpai",
     "training_time": 60,
-    "category": "nodejs"
+    "category": "nodejs",
+    "isFeatured" : true
   },
   {
     "id": "15",
@@ -147,27 +152,8 @@
     "source_link": "https://jwt.io/introduction",
     "rank": "sensei",
     "training_time": 45,
-    "category": "nodejs"
-  },
-  {
-        "id" : "16",
-        "title" : "Thinking in Components",
-        "tagline" : "The fundamental mental model. Break a UI into a tree of small, reusable pieces — and learn to see every interface this way.",
-        "source" : "react.dev",
-        "source_link" : "https://react.dev/" ,
-        "rank" : "Kohai" ,
-        "training_time" : 25 ,
-        "category" : "react"
-    },
-    {
-        "id" : "17",
-        "title" : "Flexbox Mastery",
-        "tagline" : "One axis at a time. Internalize the model and stop guessing which property does what.",
-        "source" : "css-tricks.com",
-        "source_link" : "https://css-tricks.com/" ,
-        "rank" : "Kohai" ,
-        "training_time" : 40 ,
-        "category" : "css"
-    }
+    "category": "nodejs",
+    "isFeatured" : true
+  }
 ]
 

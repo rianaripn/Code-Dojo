@@ -51,13 +51,13 @@ Wandering developers (Ronin), computer science students, and career switchers wh
 
 ## 🧩 Reusable Components
 
-| Component         | Alias          | Deskripsi                                            |
-| ----------------- | -------------- | ---------------------------------------------------- |
-| `QuestBar`        | Navbar         | Main navigation — search bar + logo                  |
-| `DojoCard`        | CategoryCard   | Visual card untuk tiap tech stack category           |
-| `ScrollCard`      | ResourceCard   | Card resource — title, rank badge, bookmark icon     |
-| `RankSelect`      | FilterDropdown | Dropdown untuk manipulate `?rank=` query param       |
-| `LoadingShuriken` | Loader         | Spinning pixel-art shuriken — loading state feedback |
+| Component         | Alias          | vscode-browser:/383369f9-016e-4bed-9457-a78f4453cce2Deskripsi |
+| ----------------- | -------------- | ------------------------------------------------------------- |
+| `QuestBar`        | Navbar         | Main navigation — search bar + logo                           |
+| `DojoCard`        | CategoryCard   | Visual card untuk tiap tech stack category                    |
+| `ScrollCard`      | ResourceCard   | Card resource — title, rank badge, bookmark icon              |
+| `RankSelect`      | FilterDropdown | Dropdown untuk manipulate `?rank=` query param                |
+| `LoadingShuriken` | Loader         | Spinning pixel-art shuriken — loading state feedback          |
 
 ---
 

@@ -4,12 +4,10 @@ import DojoCard from '../components/DojoCard'
 import categoriesDojo from '../data/categoriesDojo.json'
 import ScrollCard from '../components/ScrollCard'
 
-function Home(){
+function Home({bookmarks, setBookmarks, onBookmarks}){
     // console.log(data)
     const featured = data.filter(resource => resource.isFeatured)
     const categories = categoriesDojo
-    console.log(featured)
-    console.log(categories)
     return(
         <main className='bg-bg h-full px-8 flex flex-col gap-3 '>
             <Hero 
@@ -48,6 +46,9 @@ function Home(){
                             title={popular.title}
                             tagline={popular.tagline}
                             duration={popular.training_time}
+                            bookmarks={bookmarks}
+                            setBookmarks={setBookmarks}
+                            onBookmarks={onBookmarks}
                             />
                         </div>
                     ))}

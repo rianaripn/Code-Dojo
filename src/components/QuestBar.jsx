@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom"
 
-function QuestBar(){
+function QuestBar({bookmarksCount}){
     return(
         <header className="text-xl bg-bg border-b border-b-edge ">
             <div className="max-w-7xl mx-auto">
@@ -26,7 +26,8 @@ function QuestBar(){
                         <NavLink className={({isActive})=>
                         isActive ? "text-accent font-bold bg-bg-dark py-2 px-2" : "text-ink"} 
                         to="/scrolls"
-                        end>Scrolls</NavLink>
+                        end>{bookmarksCount>0?(<span>Scolls <span className="text-sm rounded-full border-accent border bg-accent/20 text-accent px-2 py-1">{bookmarksCount}</span></span>) : <span>Scolls</span> 
+                        }</NavLink>
                     </div>
                 </nav>
             </div>

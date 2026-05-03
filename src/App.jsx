@@ -10,7 +10,7 @@ function App() {
   return (
     <>
     <QuestBar/>
-      <Routes>
+      <Routes >
         <Route path="/" element={<Home/>} />
         <Route path="/dojo/:slug" element={<DojoPage/>} />
         <Route path="/technique/:slug" element={<TechniquePage/>} />

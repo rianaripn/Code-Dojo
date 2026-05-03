@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "react",
+    "name": "React Dojo",
+    "tagline": "Build interfaces that think.",
+    "description": "Master the art of component-based UI. From useState to useEffect, learn to build fast, reactive, and reusable interfaces the React way.",
+    "icon": "⚛️"
+  },
+  {
+    "slug": "javascript",
+    "name": "JavaScript Dojo",
+    "tagline": "The language of the web, mastered.",
+    "description": "From closures to async/await — sharpen your core JavaScript skills and understand how the language truly works under the hood.",
+    "icon": "⚡"
+  },
+  {
+    "slug": "css",
+    "name": "CSS Dojo",
+    "tagline": "Make the web beautiful, intentionally.",
+    "description": "Flexbox, Grid, animations, and design systems. Stop guessing and start building layouts with precision and confidence.",
+    "icon": "🎨"
+  },
+  {
+    "slug": "nodejs",
+    "name": "Node.js Dojo",
+    "tagline": "Bring JavaScript to the server.",
+    "description": "Learn to build REST APIs, handle authentication, and connect to databases. Your first step into the world of backend development.",
+    "icon": "🖥️"
+  }
+]

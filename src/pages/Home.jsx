@@ -2,6 +2,7 @@ import data from '../data/resources.json'
 import Hero from '../components/Hero'
 import DojoCard from '../components/DojoCard'
 import categoriesDojo from '../data/categoriesDojo.json'
+import ScrollCard from '../components/ScrollCard'
 
 function Home(){
     // console.log(data)
@@ -34,14 +35,23 @@ function Home(){
                 </div>
             </section>
             <section className='mx-8 flex flex-col gap-3' >
-                <h2 className='font-main text-2xl font-medium'> <span className='font-bold text-accent'> — </span>Featured Tecniques</h2>
-                {featured.map((f)=>(
-                    <div key={f.id} className='flex flex-col gap-3'>
-                        <h3>{f.title}</h3>
-                        <p>{f.tagline}</p>
-                    </div>
-
-                ))}
+                <div className='border-b border-edge pb-4'>
+                    <h2 className='font-main text-2xl font-medium'> <span className='font-bold text-accent'> — </span>Popular Techniques <span className='font-light text-ink-faint'>人気</span></h2>
+                </div>
+                <div className='flex flex-col gap-6'>
+                    {featured.map((popular)=>(
+                        <div key={popular.id} >
+                            <ScrollCard
+                            id={popular.id}
+                            rank={popular.rank}
+                            source={popular.source}
+                            title={popular.title}
+                            tagline={popular.tagline}
+                            duration={popular.training_time}
+                            />
+                        </div>
+                    ))}
+                </div>
             </section>
             
         </main >

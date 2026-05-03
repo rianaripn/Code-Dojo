@@ -13,13 +13,16 @@
     --color-edge : #D9CCB3;
     --color-surface : #FDFAF3;
     --color-ink : #1A1612;
-    --color-ink-soft : #1A1612;
+    --color-ink-soft : #3D342A;
     --color-ink-mute : #6B5E4F;
     --color-ink-faint : #9A8A76;
     --color-accent : #B03A2E;
     --color-accent-2 :#A52A2A;
     --color-accent-deep : #8B1A1A;
     --color-accent-soft:#C95E4F;
+    --color-kohai : #6B8E3D;
+    --color-senpai :#B8860B;
+    --color-sensei :#8B1A1A;
 
 }
 

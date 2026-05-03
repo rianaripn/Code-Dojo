@@ -1,1 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import "tailwindcss";
+
+
+@theme{
+    --font-main : "Shippori Mincho",serif;
+    --font-inter : "Inter", sans-serif;
+    --font-mono : "JetBrains Mono", monospace;
+
+    --color-bg : #F5EFE4;
+    --color-bg-dark : #EDE4D3;
+    --color-edge : #D9CCB3;
+    --color-surface : #FDFAF3;
+    --color-ink : #1A1612;
+    --color-ink-soft : #1A1612;
+    --color-ink-mute : #6B5E4F;
+    --color-ink-faint : #9A8A76;
+    --color-accent : #B03A2E;
+    --color-accent-2 :#A52A2A;
+    --color-accent-deep : #8B1A1A;
+    --color-accent-soft:#C95E4F;
+
+}
+
+@layer base{
+    body{
+        @apply font-inter;
+    }
+}

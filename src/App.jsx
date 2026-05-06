@@ -17,7 +17,7 @@ function App() {
   },[bookmarks])
 
 
-  const handleBookmarks = (id)=>{
+  const handleBookmark = (id)=>{
         if(bookmarks.includes(id)){
             setBookmarks(bookmarks.filter((i)=>i!==id))
         }else{
@@ -35,13 +35,15 @@ function App() {
         <Route path="/" element={<Home 
         bookmarks={bookmarks}
         setBookmarks ={setBookmarks}
-        onBookmarks={handleBookmarks}/>} />
+        onBookmark={handleBookmark}/>} />
         <Route path="/dojo/:slug" element={<DojoPage
         bookmarks={bookmarks}
         setBookmarks ={setBookmarks}
+        onBookmark={handleBookmark}
         />} />
         <Route path="/technique/:slug" element={<TechniquePage
         bookmarks={bookmarks}
+        onBookmark={handleBookmark}
         setBookmarks ={setBookmarks}/>} />
         <Route path="/scrolls" element={<Scrolls
         bookmarks={bookmarks}

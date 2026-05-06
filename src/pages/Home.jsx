@@ -4,7 +4,7 @@ import DojoCard from '../components/DojoCard'
 import categoriesDojo from '../data/categoriesDojo.json'
 import ScrollCard from '../components/ScrollCard'
 
-function Home({bookmarks, setBookmarks, onBookmarks}){
+function Home({bookmarks,  onBookmark}){
     // console.log(data)
     const featured = data.filter(resource => resource.isFeatured)
     const categories = categoriesDojo
@@ -47,8 +47,7 @@ function Home({bookmarks, setBookmarks, onBookmarks}){
                             tagline={popular.tagline}
                             duration={popular.training_time}
                             bookmarks={bookmarks}
-                            setBookmarks={setBookmarks}
-                            onBookmarks={onBookmarks}
+                            onBookmark={onBookmark}
                             />
                         </div>
                     ))}

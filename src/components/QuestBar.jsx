@@ -28,9 +28,8 @@ function QuestBar({bookmarksCount}){
                         to="/scrolls"
                         end>
                             <span>
-                                Scrolls {bookmarksCount>0 && (<span className="text-sm rounded-full border-accent border bg-accent/20 text-accent px-2 py-1" >{bookmarksCount}</span>)} 
+                                Scrolls {bookmarksCount>0 && (<span className="text-sm rounded-full border-accent border bg-accent/20 text-accent px-2 py-1" >{bookmarksCount}</span>)}    
                             </span>
-                            
                         </NavLink>
                     </div>
                 </nav>

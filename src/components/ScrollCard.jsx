@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-function ScrollCard({id,rank,source,title,tagline,duration,onBookmarks,bookmarks}){
+function ScrollCard({id,rank,source,title,tagline,duration,onBookmark,bookmarks}){
     const rankStyle = {
         kohai: "bg-kohai/10 text-kohai border border-kohai px-6 py-1 font-mono font-normal uppercase tracking-widest",
         senpai: "bg-senpai/10 text-senpai border border-senpai px-6 py-1 font-mono font-normal uppercase tracking-widest",
@@ -19,9 +19,10 @@ function ScrollCard({id,rank,source,title,tagline,duration,onBookmarks,bookmarks
                             <h2 className={rankStyle[rank]}>{rank}</h2>
                             <p className="font-mono uppercase text-ink-mute">{source} <span>.</span> {duration} Min </p>
                         </div>
-                        <button onClick={(e)=>{
+                        <button 
+                        onClick={(e)=>{
                             e.stopPropagation()
-                            onBookmarks(id)}}
+                            onBookmark(id)}}
                         className="cursor-pointer px-4 py-1 border border-edge bg-accent-soft/20 text-ink-soft hover:bg-accent/50 hover:text-white">
                             {isBookmarked ? "Remove Scrolls": "Add Scrolls"}</button>
                     </div>

@@ -15,7 +15,7 @@ function DojoPage({bookmarks,onBookmark}){
     console.log(categoriesData)
     
     return(
-        <main className="bg-bg h-full">
+        <main className="bg-bg h-screen">
             <section className="flex flex-col gap-6 mx-16 py-12">
                 <div>
                     <p className="font-mono uppercase text-ink-faint text-lg ">back to world map</p>

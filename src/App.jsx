@@ -47,7 +47,8 @@ function App() {
         setBookmarks ={setBookmarks}/>} />
         <Route path="/scrolls" element={<Scrolls
         bookmarks={bookmarks}
-        setBookmark ={setBookmarks}/>} />
+        onBookmark={handleBookmark}
+        setBookmarks ={setBookmarks}/>} />
       </Routes>
     </>
   )

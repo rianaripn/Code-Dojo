@@ -32,11 +32,11 @@ function Home({bookmarks,  onBookmark}){
                     ))}
                 </div>
             </section>
-            <section className='mx-8 flex flex-col gap-3' >
+            <section className='mx-8 flex flex-col' >
                 <div className='border-b border-edge pb-4'>
                     <h2 className='font-main text-2xl font-medium'> <span className='font-bold text-accent'> — </span>Popular Techniques <span className='font-light text-ink-faint'>人気</span></h2>
                 </div>
-                <div className='flex flex-col gap-6'>
+                <div className='flex flex-col'>
                     {featured.map((popular)=>(
                         <div key={popular.id} >
                             <ScrollCard

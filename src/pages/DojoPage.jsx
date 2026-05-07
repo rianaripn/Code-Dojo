@@ -43,21 +43,22 @@ function DojoPage({bookmarks,onBookmark}){
                     <p className="font-mono text-ink-mute uppercase ">
                         {filtered.length} Techniques</p>
                 </div>
-
-                {filtered.map(r=>
-                    (<ScrollCard
-                        key={r.id}
-                        id={r.id}
-                        rank={r.rank}
-                        source={r.source}
-                        title={r.title}
-                        tagline={r.tagline}
-                        duration={r.training_time}
-                        bookmarks={bookmarks}
-                        onBookmark={onBookmark}
-                    />)
-                )
-                }
+                <div>
+                    {filtered.map(r=>
+                        (<ScrollCard
+                            key={r.id}
+                            id={r.id}
+                            rank={r.rank}
+                            source={r.source}
+                            title={r.title}
+                            tagline={r.tagline}
+                            duration={r.training_time}
+                            bookmarks={bookmarks}
+                            onBookmark={onBookmark}
+                        />)
+                    )
+                    }
+                </div>
 
             </section>
         </main>

@@ -9,7 +9,8 @@ function ScrollCard({id,rank,source,title,tagline,duration,onBookmark,bookmarks}
     const isBookmarked = bookmarks.includes(id)
      
     return (
-            <section className="flex flex-row border-b gap-3 border-edge">
+        <Link to={`/technique/${id}`}>
+            <section className="flex flex-row border-b gap-3 py-6 px-6 border-edge hover:bg-bg-dark transition-all cursor-pointer">
                 <div className="p-8">
                     <p className="text-4xl text-ink-faint">巻</p>
                 </div>
@@ -21,6 +22,7 @@ function ScrollCard({id,rank,source,title,tagline,duration,onBookmark,bookmarks}
                         </div>
                         <button 
                         onClick={(e)=>{
+                            e.preventDefault()
                             e.stopPropagation()
                             onBookmark(id)}}
                         className="cursor-pointer px-4 py-1 border border-edge bg-accent-soft/20 text-ink-soft hover:bg-accent/50 hover:text-white">
@@ -32,6 +34,7 @@ function ScrollCard({id,rank,source,title,tagline,duration,onBookmark,bookmarks}
                     </div>
                 </div>
             </section>
+        </Link>
     
     )
 }

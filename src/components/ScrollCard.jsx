@@ -10,27 +10,27 @@ function ScrollCard({id,rank,source,title,tagline,duration,onBookmark,bookmarks}
      
     return (
         <Link to={`/technique/${id}`}>
-            <section className="flex flex-row border-b gap-3 py-6 px-6 border-edge hover:bg-bg-dark transition-all cursor-pointer">
-                <div className="p-8">
+            <section className="flex flex-row border-b gap-2 md:gap-3 py-4 md:py-6 px-2 md:px-6 border-edge hover:bg-bg-dark transition-all cursor-pointer">
+                <div className="hidden md:block p-8">
                     <p className="text-4xl text-ink-faint">巻</p>
                 </div>
-                <div className="flex flex-col gap-2 w-full">
-                    <div className="flex flex-row gap-3 items-center justify-between">
-                        <div className="flex flex-row gap-4 items-center">
+                <div className="flex flex-col gap-2 w-full min-w-0">
+                    <div className="flex flex-row gap-2 items-start md:items-center justify-between flex-wrap">
+                        <div className="flex flex-row gap-2 md:gap-4 items-center flex-wrap">
                             <h2 className={rankStyle[rank]}>{rank}</h2>
-                            <p className="font-mono uppercase text-ink-mute">{source} <span>.</span> {duration} Min </p>
+                            <p className="font-mono uppercase text-ink-mute text-xs md:text-sm">{source} <span>.</span> {duration} Min </p>
                         </div>
                         <button 
                         onClick={(e)=>{
                             e.preventDefault()
                             e.stopPropagation()
                             onBookmark(id)}}
-                        className="cursor-pointer px-4 py-1 border border-edge bg-accent-soft/20 text-ink-soft hover:bg-accent/50 hover:text-white">
+                        className="cursor-pointer px-3 py-1 text-sm border border-edge bg-accent-soft/20 text-ink-soft hover:bg-accent/50 hover:text-white whitespace-nowrap">
                             {isBookmarked ? "Remove Scrolls": "Add Scrolls"}</button>
                     </div>
                     <div className="flex flex-col gap-2 pb-4">
-                        <h2 className="font-main text-2xl ">{title}</h2>
-                        <p className="font-inter">{tagline}</p>
+                        <h2 className="font-main text-lg md:text-2xl ">{title}</h2>
+                        <p className="font-inter text-sm md:text-base">{tagline}</p>
                     </div>
                 </div>
             </section>

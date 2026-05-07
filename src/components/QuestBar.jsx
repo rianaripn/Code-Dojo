@@ -4,18 +4,18 @@ function QuestBar({bookmarksCount}){
     return(
         <header className="text-xl bg-bg border-b border-b-edge ">
             <div className="max-w-7xl mx-auto">
-                <nav className="flex flex-row gap-5 justify-between items-center px-12 py-4" >
+                <nav className="flex flex-row gap-5 justify-between items-center px-4 md:px-12 py-4" >
                     <div className="flex flex-row items-center gap-3"> 
                         <div className="bg-accent-2 px-1.5 py-3 border border-white ">
                             <p className="text-bg font-bold tracking-widest">道場</p>
                         </div>
                         <div className="flex flex-col items-left justify-center ">
-                            <NavLink className="font-main font-bold text-2xl"
+                            <NavLink className="font-main font-bold text-2xl md:text-2xl"
                             to="/">Code-Dojo</NavLink>
                             <p className="font-extralight text-sm text-ink-faint tracking-widest">コード道場</p>
                         </div>
                     </div>
-                    <div className="flex flex-row gap-5 items-center">
+                    <div className="hidden md:flex flex-row gap-5 items-center">
                         <h2 className="font-main text-xl italic tracking-widest">Train. Save. Master.</h2>
                         <p className="font-main text-lg tracking-widest text-ink-faint">修・蔵・極</p>
                     </div>

@@ -2,7 +2,7 @@
 
 > _"Your digital dojo to master the art of code. Discover, filter, and collect sacred scrolls of knowledge without the overwhelm."_
 
-🔗 **Live Demo:** [code-dojo.vercel.app](https://code-dojo.vercel.app) ·
+🔗 **Live Demo:** [code-dojo.vercel.app]([https://code-dojo.vercel.app](https://code-dojo-inky.vercel.app/)) ·
 📁 **Repo:** [github.com/rianaripn/CodeDOJO](https://github.com/rianaripn/CodeDOJO)
 
 ## Features

@@ -9,7 +9,7 @@ function DojoCard({categoryName,categoryTagline,categoryDesc, countTechnique}){
                     <h2 className="font-inter text-sm italic text-ink-faint">{categoryTagline}</h2>
                 </div>
                 <div className="border-b border-edge pb-4">
-                    <p className="font-inter text-sm font-light">{categoryDesc}</p>
+                    <p className="font-inter text-sm">{categoryDesc}</p>
                 </div>
                 <div className="px-4">
                     <p className="font-mono tracking-widest text-sm text-ink-faint uppercase">{countTechnique} techniques</p>

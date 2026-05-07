@@ -1,4 +1,4 @@
-import { useParams, useSearchParams } from "react-router-dom"
+import { useNavigate, useParams, useSearchParams } from "react-router-dom"
 import data from '../data/resources.json'
 import categoriesDojo from '../data/categoriesDojo.json'
 import ScrollCard from "../components/ScrollCard"
@@ -11,14 +11,17 @@ function DojoPage({bookmarks,onBookmark}){
     const resources = data.filter(r=>r.category === slug)
     const filtered = rank ? resources.filter(r=>r.rank===rank): resources
     const categoriesData =categoriesDojo.find(c=>c.slug===slug)
+    const navigate = useNavigate()
     
     console.log(categoriesData)
     
     return(
-        <main className="bg-bg h-screen">
+        <main className="bg-bg h-full min-h-screen">
             <section className="flex flex-col gap-6 mx-16 py-12">
                 <div>
-                    <p className="font-mono uppercase text-ink-faint text-lg ">back to world map</p>
+                    <p onClick={()=>navigate(-1)}
+                    className="border border-edge px-6 py-1 w-fit font-mono uppercase text-ink-faint text-sm cursor-pointer 
+                    hover:bg-edge hover:text-surface transition-all ease-in-out duration-300 "> ← Back to world map</p>
                 </div>
                 <div>
                     <h2 className="font-mono text-ink-faint text-xl tracking-widest ">- DOJO <span>. 道場</span></h2>
@@ -30,10 +33,16 @@ function DojoPage({bookmarks,onBookmark}){
                 </div>
                 {/* FILTER RANK */}
                 <div className="flex flex-row gap-4 justify-between border-b border-edge pb-4">
-                    <h2 className="font-mono uppercase text-ink-mute ">Filter by Ranks</h2>
+                    <h2 className="font-mono uppercase text-ink-mute">Filter by Ranks</h2>
                     <div className="flex flex-row gap-2 flex-1 items-center">
                         {['all','kohai','senpai','sensei'].map(r=>(    
-                            <button className="font-main text-ink-mute border-edge capitalize border rounded-full px-4 "
+                            <button 
+                            className=
+                            {(r===rank || (r==='all' && rank === null)) ? 
+                                "font-main text-accent border-accent capitalize border rounded-full px-4 cursor-pointer transition-all ease-in-out duration-300 hover:bg-edge hover:text-surface" : 
+                                
+                                "font-main text-ink-mute border-edge capitalize border rounded-full px-4 cursor-pointer transition-all ease-in-out duration-300 hover:bg-edge hover:text-surface"  }
+                            
                             onClick={()=>r==="all"?setSearchParams({}):setSearchParams({rank:r})}
                             key={r}>
                                 {r}

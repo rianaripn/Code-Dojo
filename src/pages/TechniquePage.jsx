@@ -1,16 +1,23 @@
 import ScrollCard from '../components/ScrollCard'
 import data from '../data/resources.json'
-import { useParams } from 'react-router-dom'
+import { useParams,useNavigate } from 'react-router-dom'
 
 function TechniquePage({bookmarks,onBookmark}){
     const {slug} = useParams()
     const technique = data.find(d=>d.id === slug)
     const continueLearning = data.filter(d=>d.category===technique.category && d.id !==technique.id)
+    const navigate = useNavigate()
     console.log(continueLearning)
     
     return (
         <section className='h-full bg-bg'>
+            
             <div className=' max-w-3/4 m-auto  px-16 py-12 flex flex-col gap-6'>
+                <div>
+                    <p onClick={()=>navigate(-1)}
+                    className="border border-edge px-6 py-1 w-fit font-mono uppercase text-ink-faint text-sm cursor-pointer 
+                    hover:bg-edge hover:text-surface transition-all ease-in-out duration-300 "> ← Back </p>
+                </div>
                 <div>
                     <p className='uppercase font-mono text-ink-faint text-lg'>{technique.category} DOJO</p>
                 </div>

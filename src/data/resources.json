@@ -8,6 +8,7 @@
     "rank": "kohai",
     "training_time": 25,
     "category": "react",
+    "isFeatured": true,
     "content": {
       "description": "Before you write a single line of code, learn to see the interface as a tree of components. This is the mental shift that separates React beginners from React thinkers.",
       "whatYouLearn": "This technique walks you through the five-step process React engineers use to decompose any UI — from a simple mockup to a fully interactive component tree. By the end, you'll stop guessing where to put state and start reasoning about it.",
@@ -66,71 +67,182 @@
   },
   {
     "id": "5",
-    "title": "A Complete Guide to Flexbox",
-    "tagline": "Everything you need to know about Flexbox, with visual examples.",
-    "source": "css-tricks.com",
-    "source_link": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+    "title": "React Props & Component Communication",
+    "tagline": "Master the art of passing data between parent and child components.",
+    "source": "react.dev",
+    "source_link": "https://react.dev/learn/passing-props-to-a-component",
     "rank": "kohai",
-    "training_time": 40,
-    "category": "css",
+    "training_time": 30,
+    "category": "react",
     "content": {
-      "description": "Stop guessing which flex property does what. This is the definitive visual reference that every frontend developer has bookmarked — and for good reason.",
-      "whatYouLearn": "This technique covers every Flexbox property from both the parent and child perspective. You'll finally understand the difference between justify-content and align-items, and why flex-grow behaves the way it does.",
-      "quote": "Kohai: a beginner technique. Layout mastery begins with a single axis.",
+      "description": "Props are the lifeblood of React component communication. Understanding them deeply is the difference between writing React and thinking in React.",
+      "whatYouLearn": "You'll learn how props flow from parent to child, why they are read-only, and how to design component APIs that are intuitive and flexible. You'll also understand the difference between passing data and passing functions.",
+      "quote": "Kohai: a beginner technique. Data flows downward — like water finding its path.",
       "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
     }
   },
   {
     "id": "6",
-    "title": "A Complete Guide to CSS Grid",
-    "tagline": "Master two-dimensional layouts with this comprehensive CSS Grid reference.",
-    "source": "css-tricks.com",
-    "source_link": "https://css-tricks.com/snippets/css/complete-guide-grid/",
-    "rank": "kohai",
+    "title": "React Context API",
+    "tagline": "Share state across components without prop drilling.",
+    "source": "react.dev",
+    "source_link": "https://react.dev/learn/passing-data-deeply-with-context",
+    "rank": "senpai",
     "training_time": 45,
-    "category": "css",
+    "category": "react",
     "content": {
-      "description": "Flexbox handles one axis. CSS Grid handles two. Together, they give you complete control over any layout — no more float hacks, no more positioning nightmares.",
-      "whatYouLearn": "This technique walks you through the full Grid API — grid-template-columns, grid-area, auto-placement, and the fr unit. You'll learn to build complex layouts that would have taken days with older CSS techniques.",
-      "quote": "Kohai: a beginner technique. The grid is your canvas — learn to draw on it with intention.",
+      "description": "When props need to travel through many layers of components, Context is the elegant solution. It creates a shared channel that any component can tap into.",
+      "whatYouLearn": "This technique covers createContext, Provider, and useContext — and more importantly, when to use Context versus when it's overkill. You'll also learn common patterns for combining Context with useReducer.",
+      "quote": "Senpai: an intermediate technique. Context is not a replacement for all state — it is a tool with a specific purpose.",
       "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
     }
   },
   {
     "id": "7",
-    "title": "Responsive Design in CSS",
-    "tagline": "Build layouts that adapt to any screen size using media queries.",
-    "source": "developer.mozilla.org",
-    "source_link": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design",
-    "rank": "kohai",
-    "training_time": 35,
-    "category": "css",
+    "title": "Custom Hooks in React",
+    "tagline": "Extract and reuse stateful logic across your components.",
+    "source": "react.dev",
+    "source_link": "https://react.dev/learn/reusing-logic-with-custom-hooks",
+    "rank": "senpai",
+    "training_time": 40,
+    "category": "react",
     "content": {
-      "description": "Your users are on phones, tablets, laptops, and ultrawide monitors. Responsive design is not a feature — it is the baseline expectation of every modern web interface.",
-      "whatYouLearn": "This technique covers the core principles of responsive design — fluid layouts, flexible images, and media queries. You'll learn the mobile-first approach and understand why min-width is preferred over max-width in modern CSS.",
-      "quote": "Kohai: a beginner technique. A scroll that cannot be read on any device is a scroll left unread.",
+      "description": "Custom hooks are how React developers share logic — not just UI. They are the secret weapon of clean, maintainable React codebases.",
+      "whatYouLearn": "You'll learn how to extract repeated stateful logic into custom hooks, the rules that govern them, and how to name and structure them for maximum reusability. By the end, you'll write hooks like useLocalStorage, useFetch, and useDebounce.",
+      "quote": "Senpai: an intermediate technique. The best code is the code you never have to write twice.",
       "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
     }
   },
   {
     "id": "8",
-    "title": "CSS Custom Properties (Variables)",
-    "tagline": "Use CSS variables to build consistent, themeable design systems.",
-    "source": "developer.mozilla.org",
-    "source_link": "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties",
+    "title": "useReducer for Complex State",
+    "tagline": "Manage complex state transitions with predictable reducer functions.",
+    "source": "react.dev",
+    "source_link": "https://react.dev/learn/extracting-state-logic-into-a-reducer",
     "rank": "senpai",
-    "training_time": 30,
-    "category": "css",
-    "isFeatured": true,
+    "training_time": 50,
+    "category": "react",
     "content": {
-      "description": "Hardcoded color values scattered across thousands of CSS lines is a maintenance nightmare. CSS custom properties give you a single source of truth — change one value, update everything.",
-      "whatYouLearn": "This technique covers how to declare, scope, and consume CSS variables — including dynamic theming, dark mode switching, and component-level overrides. You'll also learn how JavaScript can read and update CSS variables at runtime.",
-      "quote": "Senpai: an intermediate technique. A consistent design system is the mark of a disciplined developer.",
+      "description": "When useState becomes unwieldy, useReducer brings order. It centralizes state logic and makes complex transitions predictable and testable.",
+      "whatYouLearn": "This technique covers the reducer pattern — how to write reducer functions, dispatch actions, and structure state for complex UIs. You'll understand when to reach for useReducer over useState and how it connects to Redux concepts.",
+      "quote": "Senpai: an intermediate technique. Predictability is the highest form of code quality.",
       "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
     }
   },
   {
     "id": "9",
+    "title": "React Performance Optimization",
+    "tagline": "Stop unnecessary re-renders with memo, useMemo, and useCallback.",
+    "source": "react.dev",
+    "source_link": "https://react.dev/learn/render-and-commit",
+    "rank": "sensei",
+    "training_time": 60,
+    "category": "react",
+    "content": {
+      "description": "A React app that works is good. A React app that works efficiently is great. Performance optimization is where good developers become great ones.",
+      "whatYouLearn": "You'll learn how React's render cycle works, what triggers re-renders, and how to use React.memo, useMemo, and useCallback strategically — not blindly. You'll also learn how to use the React DevTools Profiler to identify real bottlenecks.",
+      "quote": "Sensei: an advanced technique. Optimize only what hurts — premature optimization is the enemy of clarity.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "10",
+    "title": "Fetching Data in React",
+    "tagline": "Learn patterns for loading, error, and success states when fetching data.",
+    "source": "react.dev",
+    "source_link": "https://react.dev/learn/synchronizing-with-effects#fetching-data",
+    "rank": "kohai",
+    "training_time": 35,
+    "category": "react",
+    "content": {
+      "description": "Every real React app fetches data. But doing it correctly — handling loading states, errors, race conditions, and cleanup — is where most beginners stumble.",
+      "whatYouLearn": "This technique covers the patterns for data fetching in React — using useEffect with fetch, handling loading and error states, and avoiding common pitfalls like memory leaks and stale closures.",
+      "quote": "Kohai: a beginner technique. Data is the lifeblood of your application — handle it with care.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "11",
+    "title": "React Component Patterns",
+    "tagline": "Compound components, render props, and HOCs explained.",
+    "source": "kentcdodds.com",
+    "source_link": "https://kentcdodds.com/blog/compound-components-with-react-hooks",
+    "rank": "sensei",
+    "training_time": 70,
+    "category": "react",
+    "content": {
+      "description": "Beyond basic components lies a world of advanced patterns that make your React code more flexible, composable, and elegant.",
+      "whatYouLearn": "You'll learn compound components, render props, and higher-order components — when to use each, and how modern hooks have changed the landscape. These patterns appear in every serious React codebase.",
+      "quote": "Sensei: an advanced technique. Patterns are the vocabulary of experienced engineers.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "12",
+    "title": "Forms in React",
+    "tagline": "Controlled vs uncontrolled components and form validation patterns.",
+    "source": "react.dev",
+    "source_link": "https://react.dev/reference/react-dom/components/input",
+    "rank": "kohai",
+    "training_time": 35,
+    "category": "react",
+    "content": {
+      "description": "Forms are the primary way users interact with your app. Getting them right — validation, accessibility, and state management — is a core React skill.",
+      "whatYouLearn": "This technique covers controlled and uncontrolled inputs, form submission, validation patterns, and the tradeoffs between managing form state yourself versus using libraries like React Hook Form.",
+      "quote": "Kohai: a beginner technique. Every great app begins with a form that works.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "13",
+    "title": "React Keys and Lists",
+    "tagline": "Why keys matter and how React uses them to optimize rendering.",
+    "source": "react.dev",
+    "source_link": "https://react.dev/learn/rendering-lists",
+    "rank": "kohai",
+    "training_time": 20,
+    "category": "react",
+    "content": {
+      "description": "That warning about missing keys isn't just noise — it's React telling you something important about how it tracks your components.",
+      "whatYouLearn": "You'll learn how React uses keys to identify components in lists, why using array index as key causes bugs, and how to choose stable, unique keys for your data.",
+      "quote": "Kohai: a beginner technique. Identity matters — in life and in component lists.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "14",
+    "title": "React Error Boundaries",
+    "tagline": "Gracefully handle runtime errors in your React component tree.",
+    "source": "react.dev",
+    "source_link": "https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary",
+    "rank": "sensei",
+    "training_time": 30,
+    "category": "react",
+    "content": {
+      "description": "When a component crashes, your entire app shouldn't crash with it. Error boundaries are React's safety net for runtime errors.",
+      "whatYouLearn": "This technique covers how to implement error boundaries, where to place them in your component tree, and how to display meaningful fallback UIs. You'll also learn the limitations of error boundaries and what they can't catch.",
+      "quote": "Sensei: an advanced technique. Resilient systems plan for failure — not just success.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "15",
+    "title": "React Strict Mode",
+    "tagline": "Catch bugs early with React's built-in development tool.",
+    "source": "react.dev",
+    "source_link": "https://react.dev/reference/react/StrictMode",
+    "rank": "kohai",
+    "training_time": 15,
+    "category": "react",
+    "content": {
+      "description": "StrictMode is React's way of helping you write better code. It deliberately double-invokes functions to surface hidden bugs before they reach production.",
+      "whatYouLearn": "You'll learn what StrictMode does, why your useEffect fires twice in development, and how to interpret the warnings it surfaces. Understanding StrictMode makes debugging significantly easier.",
+      "quote": "Kohai: a beginner technique. The training ground is strict so the battlefield is survivable.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "16",
     "title": "JavaScript.info — The Modern JS Tutorial",
     "tagline": "From beginner to advanced — the most complete JS tutorial on the internet.",
     "source": "javascript.info",
@@ -138,6 +250,7 @@
     "rank": "kohai",
     "training_time": 120,
     "category": "javascript",
+    "isFeatured": true,
     "content": {
       "description": "Not a crash course. Not a cheat sheet. A complete, thoughtfully written journey through the entire JavaScript language — from variables to closures to async programming.",
       "whatYouLearn": "This technique is a long-form training arc. You'll move through core syntax, functions, objects, prototypes, the DOM, events, and modern ES6+ features. Each chapter builds on the last — skip nothing.",
@@ -146,7 +259,7 @@
     }
   },
   {
-    "id": "10",
+    "id": "17",
     "title": "Async/Await & Promises Explained",
     "tagline": "Finally understand asynchronous JavaScript without losing your mind.",
     "source": "javascript.info",
@@ -163,7 +276,7 @@
     }
   },
   {
-    "id": "11",
+    "id": "18",
     "title": "Array Methods You Must Know",
     "tagline": "map, filter, reduce — the trio that transforms how you manipulate data.",
     "source": "developer.mozilla.org",
@@ -173,14 +286,14 @@
     "category": "javascript",
     "isFeatured": true,
     "content": {
-      "description": "forEach, map, filter, reduce, find, some, every — these are not optional knowledge. They are the vocabulary of modern JavaScript. Fluency here separates junior from mid-level developers.",
+      "description": "forEach, map, filter, reduce, find, some, every — these are not optional knowledge. They are the vocabulary of modern JavaScript.",
       "whatYouLearn": "This technique covers each essential array method with real examples. You'll learn not just what each method does, but when to reach for it — and why chaining them together is one of the most powerful patterns in JavaScript.",
       "quote": "Kohai: a beginner technique. Master the array, and you master half of JavaScript.",
       "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
     }
   },
   {
-    "id": "12",
+    "id": "19",
     "title": "Event Loop: How JS Really Works",
     "tagline": "Understand the call stack, web APIs, and microtask queue under the hood.",
     "source": "youtube.com",
@@ -189,14 +302,833 @@
     "training_time": 30,
     "category": "javascript",
     "content": {
-      "description": "JavaScript is single-threaded — yet it handles timers, fetch calls, and user events simultaneously. The event loop is the mechanism that makes this possible. Understanding it changes how you write code.",
+      "description": "JavaScript is single-threaded — yet it handles timers, fetch calls, and user events simultaneously. The event loop is the mechanism that makes this possible.",
       "whatYouLearn": "This technique is a 30-minute video that visualizes the call stack, heap, web APIs, callback queue, and microtask queue in real time. You'll finally understand why setTimeout(fn, 0) doesn't always run immediately.",
       "quote": "Sensei: an advanced technique. The loop runs whether you understand it or not. The wise developer understands it.",
       "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
     }
   },
   {
-    "id": "13",
+    "id": "20",
+    "title": "JavaScript Closures Explained",
+    "tagline": "Understand one of JavaScript's most powerful and misunderstood features.",
+    "source": "javascript.info",
+    "source_link": "https://javascript.info/closure",
+    "rank": "senpai",
+    "training_time": 45,
+    "category": "javascript",
+    "content": {
+      "description": "Closures are everywhere in JavaScript — in callbacks, in modules, in React hooks. Understanding them unlocks a deeper level of mastery over the language.",
+      "whatYouLearn": "You'll learn what a closure is, how the lexical environment works, and why functions remember the scope in which they were created. Real-world examples include memoization, module patterns, and React's useState.",
+      "quote": "Senpai: an intermediate technique. A closure is a function that remembers its past — master this and you master JavaScript's soul.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "21",
+    "title": "ES6+ Features Every Developer Should Know",
+    "tagline": "Destructuring, spread, rest, optional chaining, and more.",
+    "source": "javascript.info",
+    "source_link": "https://javascript.info/destructuring-assignment",
+    "rank": "kohai",
+    "training_time": 40,
+    "category": "javascript",
+    "content": {
+      "description": "Modern JavaScript syntax makes code more readable and expressive. These features aren't just shortcuts — they represent a better way of thinking about your data.",
+      "whatYouLearn": "This technique covers destructuring, spread/rest operators, optional chaining, nullish coalescing, template literals, and arrow functions. You'll write cleaner code from day one.",
+      "quote": "Kohai: a beginner technique. Modern syntax is not decoration — it is clarity.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "22",
+    "title": "JavaScript Prototypes & Inheritance",
+    "tagline": "Understand the prototype chain that powers all JavaScript objects.",
+    "source": "javascript.info",
+    "source_link": "https://javascript.info/prototypes",
+    "rank": "sensei",
+    "training_time": 55,
+    "category": "javascript",
+    "content": {
+      "description": "Every JavaScript object has a prototype. Understanding this chain is the key to truly understanding how JavaScript works under the hood.",
+      "whatYouLearn": "This technique covers prototype chains, constructor functions, the class syntax as syntactic sugar, and how inheritance works in JavaScript. You'll understand why typeof null === 'object' and other quirks.",
+      "quote": "Sensei: an advanced technique. JavaScript hides its secrets in its prototype chain.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "23",
+    "title": "JavaScript Modules (ESM)",
+    "tagline": "Organize your code with import and export statements.",
+    "source": "developer.mozilla.org",
+    "source_link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules",
+    "rank": "kohai",
+    "training_time": 25,
+    "category": "javascript",
+    "content": {
+      "description": "Modern JavaScript is modular. Understanding how to split your code into focused, reusable modules is a fundamental professional skill.",
+      "whatYouLearn": "You'll learn named exports, default exports, re-exports, dynamic imports, and the difference between ESM and CommonJS. This knowledge is essential for working with any modern JavaScript toolchain.",
+      "quote": "Kohai: a beginner technique. A codebase with no modules is a dojo with no rooms.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "24",
+    "title": "Error Handling in JavaScript",
+    "tagline": "try, catch, finally, and custom error classes done right.",
+    "source": "javascript.info",
+    "source_link": "https://javascript.info/try-catch",
+    "rank": "senpai",
+    "training_time": 30,
+    "category": "javascript",
+    "content": {
+      "description": "Every program will encounter errors. The question is whether you handle them gracefully or let them crash your users' experience.",
+      "whatYouLearn": "This technique covers try/catch/finally, throwing custom errors, error types, and async error handling with async/await. You'll learn to write code that fails safely and informatively.",
+      "quote": "Senpai: an intermediate technique. The warrior who anticipates failure survives longer than one who does not.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "25",
+    "title": "JavaScript Design Patterns",
+    "tagline": "Singleton, Observer, Factory — timeless patterns for modern JS.",
+    "source": "patterns.dev",
+    "source_link": "https://www.patterns.dev/",
+    "rank": "sensei",
+    "training_time": 90,
+    "category": "javascript",
+    "content": {
+      "description": "Design patterns are the accumulated wisdom of generations of programmers. Learning them means you never have to solve the same problem twice.",
+      "whatYouLearn": "This technique covers the most important JavaScript design patterns — Singleton, Observer, Module, Factory, and Proxy — with modern JavaScript implementations. You'll start recognizing these patterns in codebases you read.",
+      "quote": "Sensei: an advanced technique. Patterns are solutions that survived the test of time.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "26",
+    "title": "JavaScript Fetch API",
+    "tagline": "Make HTTP requests natively without any library.",
+    "source": "developer.mozilla.org",
+    "source_link": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch",
+    "rank": "kohai",
+    "training_time": 30,
+    "category": "javascript",
+    "content": {
+      "description": "The Fetch API is the modern standard for making HTTP requests in JavaScript. Clean, promise-based, and available in every modern browser.",
+      "whatYouLearn": "You'll learn how to make GET, POST, PUT, and DELETE requests, handle JSON responses, manage headers, and handle errors properly. This is the foundation of all frontend-backend communication.",
+      "quote": "Kohai: a beginner technique. Every journey across the network begins with a single fetch.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "27",
+    "title": "Local Storage & Session Storage",
+    "tagline": "Persist data in the browser without a backend.",
+    "source": "developer.mozilla.org",
+    "source_link": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage",
+    "rank": "kohai",
+    "training_time": 20,
+    "category": "javascript",
+    "content": {
+      "description": "Sometimes you need to remember things without a server. localStorage and sessionStorage are the browser's built-in memory — simple, fast, and always available.",
+      "whatYouLearn": "This technique covers the Web Storage API — how to get, set, remove, and clear storage, the difference between localStorage and sessionStorage, and how to store complex objects with JSON serialization.",
+      "quote": "Kohai: a beginner technique. Memory without a server — simple, powerful, and always within reach.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "28",
+    "title": "Regular Expressions in JavaScript",
+    "tagline": "Pattern matching and text manipulation with regex.",
+    "source": "javascript.info",
+    "source_link": "https://javascript.info/regular-expressions",
+    "rank": "sensei",
+    "training_time": 60,
+    "category": "javascript",
+    "content": {
+      "description": "Regular expressions are cryptic to the uninitiated and powerful to the trained eye. Every serious developer eventually needs them.",
+      "whatYouLearn": "You'll learn regex syntax, character classes, quantifiers, groups, lookaheads, and how to use them with JavaScript's string methods. You'll write regex for email validation, URL parsing, and text transformation.",
+      "quote": "Sensei: an advanced technique. The one who reads the pattern sees what others cannot.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "29",
+    "title": "JavaScript Interview Questions",
+    "tagline": "The 50 most common JS interview questions with answers.",
+    "source": "github.com",
+    "source_link": "https://github.com/lydiahallie/javascript-questions",
+    "rank": "senpai",
+    "training_time": 90,
+    "category": "javascript",
+    "content": {
+      "description": "Theory is one thing. Interview pressure is another. This resource bridges the gap — real questions, real answers, real explanations.",
+      "whatYouLearn": "This technique walks through 150+ JavaScript interview questions covering hoisting, closures, the event loop, prototypes, and more. Each answer comes with a detailed explanation of the why.",
+      "quote": "Senpai: an intermediate technique. The exam reveals what the practice concealed.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "30",
+    "title": "DOM Manipulation Fundamentals",
+    "tagline": "Select, create, modify, and delete DOM elements with vanilla JS.",
+    "source": "javascript.info",
+    "source_link": "https://javascript.info/document",
+    "rank": "kohai",
+    "training_time": 40,
+    "category": "javascript",
+    "content": {
+      "description": "Before frameworks, there was the DOM. Understanding how to manipulate it directly makes you a better React developer — because you understand what React is doing for you.",
+      "whatYouLearn": "This technique covers querySelector, createElement, appendChild, event listeners, and DOM traversal. You'll build small interactive UIs from scratch — no framework required.",
+      "quote": "Kohai: a beginner technique. Know the foundation before you build upon it.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "31",
+    "title": "A Complete Guide to Flexbox",
+    "tagline": "Everything you need to know about Flexbox, with visual examples.",
+    "source": "css-tricks.com",
+    "source_link": "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+    "rank": "kohai",
+    "training_time": 40,
+    "category": "css",
+    "content": {
+      "description": "Stop guessing which flex property does what. This is the definitive visual reference that every frontend developer has bookmarked.",
+      "whatYouLearn": "This technique covers every Flexbox property from both the parent and child perspective. You'll finally understand the difference between justify-content and align-items, and why flex-grow behaves the way it does.",
+      "quote": "Kohai: a beginner technique. Layout mastery begins with a single axis.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "32",
+    "title": "A Complete Guide to CSS Grid",
+    "tagline": "Master two-dimensional layouts with this comprehensive CSS Grid reference.",
+    "source": "css-tricks.com",
+    "source_link": "https://css-tricks.com/snippets/css/complete-guide-grid/",
+    "rank": "kohai",
+    "training_time": 45,
+    "category": "css",
+    "content": {
+      "description": "Flexbox handles one axis. CSS Grid handles two. Together, they give you complete control over any layout.",
+      "whatYouLearn": "This technique walks you through the full Grid API — grid-template-columns, grid-area, auto-placement, and the fr unit. You'll learn to build complex layouts that would have taken days with older CSS techniques.",
+      "quote": "Kohai: a beginner technique. The grid is your canvas — learn to draw on it with intention.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "33",
+    "title": "CSS Custom Properties (Variables)",
+    "tagline": "Use CSS variables to build consistent, themeable design systems.",
+    "source": "developer.mozilla.org",
+    "source_link": "https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties",
+    "rank": "senpai",
+    "training_time": 30,
+    "category": "css",
+    "isFeatured": true,
+    "content": {
+      "description": "Hardcoded color values scattered across thousands of CSS lines is a maintenance nightmare. CSS custom properties give you a single source of truth.",
+      "whatYouLearn": "This technique covers how to declare, scope, and consume CSS variables — including dynamic theming, dark mode switching, and component-level overrides.",
+      "quote": "Senpai: an intermediate technique. A consistent design system is the mark of a disciplined developer.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "34",
+    "title": "Responsive Design in CSS",
+    "tagline": "Build layouts that adapt to any screen size using media queries.",
+    "source": "developer.mozilla.org",
+    "source_link": "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design",
+    "rank": "kohai",
+    "training_time": 35,
+    "category": "css",
+    "content": {
+      "description": "Your users are on phones, tablets, laptops, and ultrawide monitors. Responsive design is the baseline expectation of every modern web interface.",
+      "whatYouLearn": "This technique covers the core principles of responsive design — fluid layouts, flexible images, and media queries. You'll learn the mobile-first approach.",
+      "quote": "Kohai: a beginner technique. A scroll that cannot be read on any device is a scroll left unread.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "35",
+    "title": "CSS Animations & Transitions",
+    "tagline": "Bring your UI to life with smooth, performant animations.",
+    "source": "developer.mozilla.org",
+    "source_link": "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations",
+    "rank": "senpai",
+    "training_time": 40,
+    "category": "css",
+    "content": {
+      "description": "Animation is the difference between a UI that works and a UI that delights. CSS gives you powerful tools to create both.",
+      "whatYouLearn": "This technique covers transition, animation, @keyframes, timing functions, and performance considerations. You'll learn which properties to animate for 60fps performance and which to avoid.",
+      "quote": "Senpai: an intermediate technique. Motion communicates meaning — use it with intention.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "36",
+    "title": "CSS Specificity & Cascade",
+    "tagline": "Finally understand why your styles aren't applying.",
+    "source": "developer.mozilla.org",
+    "source_link": "https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity",
+    "rank": "kohai",
+    "training_time": 25,
+    "category": "css",
+    "content": {
+      "description": "The cascade is CSS's most powerful feature — and its most confusing. Understanding specificity ends the war against !important.",
+      "whatYouLearn": "You'll learn how specificity is calculated, how the cascade resolves conflicts, and how inheritance works. You'll stop fighting the cascade and start working with it.",
+      "quote": "Kohai: a beginner technique. Know the rules before you break them.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "37",
+    "title": "CSS Typography Mastery",
+    "tagline": "Font loading, variable fonts, and typographic scale.",
+    "source": "web.dev",
+    "source_link": "https://web.dev/learn/css/typography",
+    "rank": "senpai",
+    "training_time": 35,
+    "category": "css",
+    "content": {
+      "description": "Typography is 95% of web design. Getting it right — the scale, the spacing, the weight — transforms a mediocre UI into a beautiful one.",
+      "whatYouLearn": "This technique covers font-face, variable fonts, typographic scale, line-height, letter-spacing, and font performance. You'll build type systems that are both beautiful and fast.",
+      "quote": "Senpai: an intermediate technique. Typography is the voice of your design — make it speak clearly.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "38",
+    "title": "Dark Mode with CSS",
+    "tagline": "Implement dark mode using CSS variables and prefers-color-scheme.",
+    "source": "css-tricks.com",
+    "source_link": "https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/",
+    "rank": "senpai",
+    "training_time": 30,
+    "category": "css",
+    "content": {
+      "description": "Dark mode is no longer optional — it's expected. Implementing it correctly requires a systematic approach to color tokens and theme switching.",
+      "whatYouLearn": "This technique covers prefers-color-scheme, CSS variable theming, data-theme attributes, and user preference persistence. You'll implement a toggle that respects system preferences and remembers user choice.",
+      "quote": "Senpai: an intermediate technique. Light and dark — a design that adapts is a design that respects.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "39",
+    "title": "CSS Positioning Deep Dive",
+    "tagline": "Master static, relative, absolute, fixed, and sticky positioning.",
+    "source": "developer.mozilla.org",
+    "source_link": "https://developer.mozilla.org/en-US/docs/Web/CSS/position",
+    "rank": "kohai",
+    "training_time": 30,
+    "category": "css",
+    "content": {
+      "description": "Positioning is where many developers get lost. Understanding the stacking context and each position value unlocks the ability to place any element anywhere.",
+      "whatYouLearn": "You'll learn the difference between all five position values, how z-index and stacking contexts work, and how to create sticky headers, fixed navbars, and absolutely positioned tooltips.",
+      "quote": "Kohai: a beginner technique. Know where you stand before you decide where to go.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "40",
+    "title": "Tailwind CSS Core Concepts",
+    "tagline": "The utility-first mindset that changes how you write CSS.",
+    "source": "tailwindcss.com",
+    "source_link": "https://tailwindcss.com/docs/utility-first",
+    "rank": "kohai",
+    "training_time": 35,
+    "category": "css",
+    "content": {
+      "description": "Tailwind CSS flips the traditional CSS model on its head. Instead of writing custom CSS, you compose utilities directly in your HTML — and it works beautifully.",
+      "whatYouLearn": "This technique covers the utility-first philosophy, how Tailwind's design system works, responsive prefixes, hover/focus states, and how to extend the default configuration.",
+      "quote": "Kohai: a beginner technique. Utilities are not shortcuts — they are a different way of thinking.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "41",
+    "title": "HTML Document Structure",
+    "tagline": "The skeleton of every webpage — done right from the start.",
+    "source": "developer.mozilla.org",
+    "source_link": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure",
+    "rank": "kohai",
+    "training_time": 20,
+    "category": "html",
+    "content": {
+      "description": "HTML is not just markup — it's the semantic structure of your content. A well-structured HTML document is accessible, SEO-friendly, and easier to style.",
+      "whatYouLearn": "This technique covers the anatomy of an HTML document — DOCTYPE, head, body, and the landmark elements that give structure to a webpage. You'll understand what goes in the head versus the body.",
+      "quote": "Kohai: a beginner technique. A strong structure is the foundation of everything built upon it.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "42",
+    "title": "Semantic HTML Elements",
+    "tagline": "Use the right element for the right purpose — every time.",
+    "source": "developer.mozilla.org",
+    "source_link": "https://developer.mozilla.org/en-US/docs/Glossary/Semantics#semantics_in_html",
+    "rank": "kohai",
+    "training_time": 25,
+    "category": "html",
+    "content": {
+      "description": "Using div for everything is a habit. Using semantic elements is a discipline. The difference matters for accessibility, SEO, and code readability.",
+      "whatYouLearn": "You'll learn when to use article, section, aside, nav, header, footer, main, and figure — and why they matter beyond just aesthetics. Semantic HTML is the foundation of accessible web development.",
+      "quote": "Kohai: a beginner technique. Call things by their right names — in language and in code.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "43",
+    "title": "HTML Forms & Input Types",
+    "tagline": "Build accessible, usable forms with native HTML power.",
+    "source": "developer.mozilla.org",
+    "source_link": "https://developer.mozilla.org/en-US/docs/Learn/Forms",
+    "rank": "kohai",
+    "training_time": 35,
+    "category": "html",
+    "content": {
+      "description": "Forms are how users interact with your application. Native HTML form elements are more powerful than most developers realize — and they're free.",
+      "whatYouLearn": "This technique covers all input types, labels, fieldsets, validation attributes, and the form submission model. You'll learn to build forms that are accessible by default — before adding any JavaScript.",
+      "quote": "Kohai: a beginner technique. The form is the handshake between user and application.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "44",
+    "title": "HTML Accessibility (a11y) Basics",
+    "tagline": "Build websites that work for everyone — including screen reader users.",
+    "source": "web.dev",
+    "source_link": "https://web.dev/learn/accessibility",
+    "rank": "senpai",
+    "training_time": 60,
+    "category": "html",
+    "content": {
+      "description": "Accessibility is not a feature — it is a responsibility. Building accessible interfaces makes your product usable by millions more people.",
+      "whatYouLearn": "This technique covers ARIA roles, alt attributes, keyboard navigation, focus management, color contrast, and how to test with a screen reader. You'll audit an existing page and fix its accessibility issues.",
+      "quote": "Senpai: an intermediate technique. The dojo that welcomes all students is the strongest dojo.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "45",
+    "title": "HTML Meta Tags & SEO",
+    "tagline": "Control how your page appears in search engines and social media.",
+    "source": "developer.mozilla.org",
+    "source_link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta",
+    "rank": "kohai",
+    "training_time": 20,
+    "category": "html",
+    "content": {
+      "description": "The head of your HTML document is invisible to users but critical for search engines and social sharing. Getting it right costs nothing — getting it wrong costs traffic.",
+      "whatYouLearn": "This technique covers essential meta tags — charset, viewport, description, Open Graph, Twitter Cards, and canonical URLs. You'll optimize a page for both search engines and social media sharing.",
+      "quote": "Kohai: a beginner technique. What the user doesn't see, the algorithm always reads.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "46",
+    "title": "HTML Tables Done Right",
+    "tagline": "When to use tables, how to structure them, and how to style them.",
+    "source": "developer.mozilla.org",
+    "source_link": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables",
+    "rank": "kohai",
+    "training_time": 25,
+    "category": "html",
+    "content": {
+      "description": "Tables have a bad reputation — earned by their misuse for layout. Used correctly for tabular data, they are powerful and semantic.",
+      "whatYouLearn": "This technique covers table structure, thead, tbody, tfoot, colspan, rowspan, caption, and accessibility considerations. You'll build a data table that is both semantic and screen-reader friendly.",
+      "quote": "Kohai: a beginner technique. Use the right tool for the right data.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "47",
+    "title": "HTML Media Elements",
+    "tagline": "Images, video, audio, and canvas — native media in the browser.",
+    "source": "developer.mozilla.org",
+    "source_link": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/video",
+    "rank": "kohai",
+    "training_time": 25,
+    "category": "html",
+    "content": {
+      "description": "The web is a rich media platform. HTML gives you native elements for images, video, and audio — no plugin required.",
+      "whatYouLearn": "This technique covers img (with srcset and sizes), video, audio, figure, figcaption, and the picture element for responsive images. You'll optimize media for performance and accessibility.",
+      "quote": "Kohai: a beginner technique. Rich media, handled responsibly.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "48",
+    "title": "Web Performance & HTML",
+    "tagline": "Load faster with defer, async, preload, and lazy loading.",
+    "source": "web.dev",
+    "source_link": "https://web.dev/learn/performance",
+    "rank": "senpai",
+    "training_time": 45,
+    "category": "html",
+    "content": {
+      "description": "Performance begins in the HTML. The order of your tags, the attributes on your scripts, and the way you load resources all affect how fast your page appears.",
+      "whatYouLearn": "This technique covers script defer and async, link preload and prefetch, image lazy loading, and critical rendering path optimization. You'll measure and improve a real page's load performance.",
+      "quote": "Senpai: an intermediate technique. Speed is not a feature — it is respect for your user's time.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "49",
+    "title": "HTML Custom Data Attributes",
+    "tagline": "Store extra information in your HTML with data-* attributes.",
+    "source": "developer.mozilla.org",
+    "source_link": "https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes",
+    "rank": "kohai",
+    "training_time": 15,
+    "category": "html",
+    "content": {
+      "description": "Sometimes you need to store extra information in your HTML that doesn't fit any existing attribute. data-* attributes are the clean, semantic solution.",
+      "whatYouLearn": "You'll learn how to set, read, and use data attributes with JavaScript's dataset API. You'll see practical examples in filtering, animations, and component state.",
+      "quote": "Kohai: a beginner technique. Hidden in plain sight — data that speaks to JavaScript.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "50",
+    "title": "HTML Canvas Basics",
+    "tagline": "Draw graphics, charts, and animations with the HTML Canvas API.",
+    "source": "developer.mozilla.org",
+    "source_link": "https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial",
+    "rank": "sensei",
+    "training_time": 60,
+    "category": "html",
+    "content": {
+      "description": "Canvas is where HTML meets low-level graphics programming. It powers games, data visualizations, and real-time graphics in the browser.",
+      "whatYouLearn": "This technique covers the 2D rendering context, drawing shapes and paths, images, transformations, and animation with requestAnimationFrame. You'll build a simple interactive drawing app.",
+      "quote": "Sensei: an advanced technique. The blank canvas is not emptiness — it is infinite possibility.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "51",
+    "title": "TypeScript in 5 Minutes",
+    "tagline": "Your first TypeScript program — from zero to typed in minutes.",
+    "source": "typescriptlang.org",
+    "source_link": "https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html",
+    "rank": "kohai",
+    "training_time": 20,
+    "category": "typescript",
+    "content": {
+      "description": "TypeScript starts with JavaScript and adds types. The official 5-minute introduction is the fastest way to understand what you're getting into.",
+      "whatYouLearn": "You'll write your first TypeScript program, understand the basic type annotations, and see how TypeScript catches errors that JavaScript would miss. The starting point for every TypeScript journey.",
+      "quote": "Kohai: a beginner technique. A typed mind is a clear mind.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "52",
+    "title": "TypeScript Basic Types",
+    "tagline": "string, number, boolean, array, tuple, and more.",
+    "source": "typescriptlang.org",
+    "source_link": "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html",
+    "rank": "kohai",
+    "training_time": 35,
+    "category": "typescript",
+    "content": {
+      "description": "Types are TypeScript's vocabulary. Learning the basic types is the first step to writing code that is self-documenting and error-resistant.",
+      "whatYouLearn": "This technique covers primitive types, arrays, tuples, enums, any, unknown, void, and never. You'll understand type inference and when to annotate explicitly versus let TypeScript figure it out.",
+      "quote": "Kohai: a beginner technique. Name your types — name your intentions.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "53",
+    "title": "TypeScript Interfaces & Types",
+    "tagline": "Define the shape of your objects with interfaces and type aliases.",
+    "source": "typescriptlang.org",
+    "source_link": "https://www.typescriptlang.org/docs/handbook/2/objects.html",
+    "rank": "kohai",
+    "training_time": 40,
+    "category": "typescript",
+    "content": {
+      "description": "Interfaces and type aliases are TypeScript's tools for describing the shape of objects. Choosing between them — and knowing their differences — is a core TypeScript skill.",
+      "whatYouLearn": "You'll learn how to define interfaces, extend them, use type aliases, and understand the key differences between interface and type. You'll type real-world data structures like API responses and component props.",
+      "quote": "Kohai: a beginner technique. A contract written in types is a contract that machines can verify.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "54",
+    "title": "TypeScript Generics",
+    "tagline": "Write flexible, reusable code that works with any type.",
+    "source": "typescriptlang.org",
+    "source_link": "https://www.typescriptlang.org/docs/handbook/2/generics.html",
+    "rank": "senpai",
+    "training_time": 50,
+    "category": "typescript",
+    "content": {
+      "description": "Generics are TypeScript's way of writing code that is both flexible and type-safe. They are the foundation of reusable, well-typed libraries.",
+      "whatYouLearn": "This technique covers generic functions, generic interfaces, generic constraints, and utility types like Partial, Required, Pick, and Omit. You'll write your first generic data fetching hook.",
+      "quote": "Senpai: an intermediate technique. Generics are the art of writing code for all types without sacrificing safety for any.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "55",
+    "title": "TypeScript with React",
+    "tagline": "Type your components, props, hooks, and events.",
+    "source": "react.dev",
+    "source_link": "https://react.dev/learn/typescript",
+    "rank": "senpai",
+    "training_time": 55,
+    "category": "typescript",
+    "isFeatured": true,
+    "content": {
+      "description": "React and TypeScript are a natural pair. Typed props catch bugs at compile time, typed hooks prevent runtime errors, and typed events make event handling predictable.",
+      "whatYouLearn": "This technique covers typing component props, useState, useRef, useReducer, event handlers, and context. You'll convert a JavaScript React component to TypeScript step by step.",
+      "quote": "Senpai: an intermediate technique. Types are the documentation that never goes out of date.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "56",
+    "title": "TypeScript Utility Types",
+    "tagline": "Partial, Required, Pick, Omit, Record — TypeScript's built-in helpers.",
+    "source": "typescriptlang.org",
+    "source_link": "https://www.typescriptlang.org/docs/handbook/utility-types.html",
+    "rank": "senpai",
+    "training_time": 40,
+    "category": "typescript",
+    "content": {
+      "description": "TypeScript ships with a powerful set of utility types that transform existing types into new ones. They eliminate boilerplate and make your type system more expressive.",
+      "whatYouLearn": "This technique covers Partial, Required, Readonly, Pick, Omit, Record, Exclude, Extract, NonNullable, and ReturnType. You'll use them to type real-world scenarios like form state and API responses.",
+      "quote": "Senpai: an intermediate technique. The tools that come with the dojo are there for a reason — learn them.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "57",
+    "title": "TypeScript Enums & Literal Types",
+    "tagline": "Constrain values to a fixed set with enums and union literals.",
+    "source": "typescriptlang.org",
+    "source_link": "https://www.typescriptlang.org/docs/handbook/enums.html",
+    "rank": "kohai",
+    "training_time": 25,
+    "category": "typescript",
+    "content": {
+      "description": "When a value can only be one of a few options, TypeScript gives you the tools to enforce that constraint at compile time — eliminating an entire class of runtime errors.",
+      "whatYouLearn": "You'll learn string enums, numeric enums, const enums, and union literal types. You'll understand when to use each and the tradeoffs between them.",
+      "quote": "Kohai: a beginner technique. Constrained choices lead to predictable outcomes.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "58",
+    "title": "TypeScript Type Narrowing",
+    "tagline": "Help TypeScript understand your types at runtime with guards.",
+    "source": "typescriptlang.org",
+    "source_link": "https://www.typescriptlang.org/docs/handbook/2/narrowing.html",
+    "rank": "senpai",
+    "training_time": 35,
+    "category": "typescript",
+    "content": {
+      "description": "TypeScript can't always know the exact type of a value. Type narrowing is how you guide it — and unlock more precise type information in different code branches.",
+      "whatYouLearn": "This technique covers typeof guards, instanceof checks, in operator narrowing, discriminated unions, and user-defined type guards. You'll handle API responses and union types with confidence.",
+      "quote": "Senpai: an intermediate technique. Narrowing is the art of knowing exactly what you're dealing with.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "59",
+    "title": "Advanced TypeScript Patterns",
+    "tagline": "Conditional types, mapped types, and template literal types.",
+    "source": "typescriptlang.org",
+    "source_link": "https://www.typescriptlang.org/docs/handbook/2/conditional-types.html",
+    "rank": "sensei",
+    "training_time": 75,
+    "category": "typescript",
+    "content": {
+      "description": "Advanced TypeScript is a programming language within a programming language. Mastering it gives you the power to build type-safe abstractions that would be impossible otherwise.",
+      "whatYouLearn": "This technique covers conditional types, infer keyword, mapped types, template literal types, and recursive types. You'll build advanced utility types from scratch.",
+      "quote": "Sensei: an advanced technique. At this level, types become logic. Master the logic.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "60",
+    "title": "TypeScript Configuration (tsconfig)",
+    "tagline": "Master the tsconfig.json file and its most important options.",
+    "source": "typescriptlang.org",
+    "source_link": "https://www.typescriptlang.org/tsconfig",
+    "rank": "senpai",
+    "training_time": 30,
+    "category": "typescript",
+    "content": {
+      "description": "tsconfig.json is the control panel of your TypeScript project. Understanding its options lets you configure TypeScript exactly as strict or lenient as your project needs.",
+      "whatYouLearn": "This technique covers the most important tsconfig options — strict, target, module, paths, baseUrl, and lib. You'll understand what strict mode enables and why you should always use it.",
+      "quote": "Senpai: an intermediate technique. A well-configured tool is a productive tool.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "61",
+    "title": "Git Fundamentals",
+    "tagline": "init, add, commit, push — your first Git workflow.",
+    "source": "git-scm.com",
+    "source_link": "https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F",
+    "rank": "kohai",
+    "training_time": 30,
+    "category": "git",
+    "isFeatured": true,
+    "content": {
+      "description": "Git is the time machine of software development. Every professional developer uses it — and every beginner should learn it before writing their first line of production code.",
+      "whatYouLearn": "This technique covers the core Git workflow — init, add, commit, status, log, and push. You'll understand the working directory, staging area, and repository — and why each step exists.",
+      "quote": "Kohai: a beginner technique. Every commit is a checkpoint. Save often — regret never.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "62",
+    "title": "Git Branching Strategy",
+    "tagline": "Feature branches, main, and the workflow that powers teams.",
+    "source": "git-scm.com",
+    "source_link": "https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell",
+    "rank": "kohai",
+    "training_time": 35,
+    "category": "git",
+    "content": {
+      "description": "Branches are what make Git truly powerful. They let you work on features in isolation, experiment without fear, and collaborate without conflict.",
+      "whatYouLearn": "This technique covers branch creation, switching, merging, and deletion. You'll learn the feature branch workflow — the standard used by most professional development teams.",
+      "quote": "Kohai: a beginner technique. Branch freely — merge intentionally.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "63",
+    "title": "Git Merge vs Rebase",
+    "tagline": "Understand when to merge and when to rebase — and why it matters.",
+    "source": "atlassian.com",
+    "source_link": "https://www.atlassian.com/git/tutorials/merging-vs-rebasing",
+    "rank": "senpai",
+    "training_time": 40,
+    "category": "git",
+    "content": {
+      "description": "Merge and rebase both integrate changes — but they tell different stories. Understanding the difference makes you a more intentional collaborator.",
+      "whatYouLearn": "This technique covers the mechanics of merge and rebase, the tradeoffs between linear and non-linear history, and when each approach is appropriate. You'll learn the golden rule of rebasing.",
+      "quote": "Senpai: an intermediate technique. History is not just what happened — it is what you choose to record.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "64",
+    "title": "Git Commit Message Conventions",
+    "tagline": "Write commit messages that communicate intent, not just action.",
+    "source": "conventionalcommits.org",
+    "source_link": "https://www.conventionalcommits.org/",
+    "rank": "kohai",
+    "training_time": 20,
+    "category": "git",
+    "content": {
+      "description": "A good commit message is a gift to your future self. It tells the story of why a change was made — not just what changed.",
+      "whatYouLearn": "This technique covers the Conventional Commits specification — feat, fix, docs, chore, refactor, and breaking changes. You'll learn to write messages that generate readable changelogs and make code review easier.",
+      "quote": "Kohai: a beginner technique. Write your commit message to the developer who inherits your code at 2am.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "65",
+    "title": "GitHub Pull Requests & Code Review",
+    "tagline": "The collaborative workflow that powers open source and team development.",
+    "source": "docs.github.com",
+    "source_link": "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests",
+    "rank": "kohai",
+    "training_time": 30,
+    "category": "git",
+    "content": {
+      "description": "Pull requests are not just a GitHub feature — they are a discipline. They create a space for deliberate review, discussion, and improvement before code reaches production.",
+      "whatYouLearn": "This technique covers how to create pull requests, write good PR descriptions, review code, leave constructive comments, request changes, and merge. You'll learn PR etiquette used in professional teams.",
+      "quote": "Kohai: a beginner technique. The PR is not a formality — it is a conversation.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "66",
+    "title": "Git Stash & Cherry-Pick",
+    "tagline": "Save work in progress and apply specific commits across branches.",
+    "source": "git-scm.com",
+    "source_link": "https://git-scm.com/docs/git-stash",
+    "rank": "senpai",
+    "training_time": 25,
+    "category": "git",
+    "content": {
+      "description": "Sometimes you need to switch context without committing unfinished work. Sometimes you need just one commit from another branch. Git stash and cherry-pick are your tools.",
+      "whatYouLearn": "This technique covers git stash, stash list, stash pop, stash apply, and git cherry-pick. You'll handle the common scenario of needing to pull changes while you have uncommitted work.",
+      "quote": "Senpai: an intermediate technique. The flexible warrior adapts — the flexible developer stashes.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "67",
+    "title": "Git Reset, Revert & Restore",
+    "tagline": "Undo mistakes in Git without fear.",
+    "source": "git-scm.com",
+    "source_link": "https://git-scm.com/docs/git-reset",
+    "rank": "senpai",
+    "training_time": 35,
+    "category": "git",
+    "content": {
+      "description": "Everyone makes mistakes in Git. The difference between a junior and a senior developer is knowing how to undo them cleanly — and which undo command to use.",
+      "whatYouLearn": "This technique covers git reset (soft, mixed, hard), git revert, and git restore. You'll understand which command to use in which situation, and how to avoid losing work you meant to keep.",
+      "quote": "Senpai: an intermediate technique. The ability to undo is not weakness — it is wisdom.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "68",
+    "title": ".gitignore Best Practices",
+    "tagline": "Keep sensitive files and build artifacts out of your repository.",
+    "source": "git-scm.com",
+    "source_link": "https://git-scm.com/docs/gitignore",
+    "rank": "kohai",
+    "training_time": 15,
+    "category": "git",
+    "content": {
+      "description": "Your repository should contain source code — not node_modules, not .env files, not build output. .gitignore is the gatekeeper.",
+      "whatYouLearn": "This technique covers gitignore syntax, common patterns for Node.js and React projects, global gitignore, and what never to commit (API keys, passwords, large binary files).",
+      "quote": "Kohai: a beginner technique. What you exclude is as important as what you include.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "69",
+    "title": "GitHub Actions Basics",
+    "tagline": "Automate testing and deployment with CI/CD pipelines.",
+    "source": "docs.github.com",
+    "source_link": "https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions",
+    "rank": "sensei",
+    "training_time": 60,
+    "category": "git",
+    "content": {
+      "description": "Manual deployment is a liability. GitHub Actions lets you automate testing, linting, and deployment on every push — turning good habits into enforced standards.",
+      "whatYouLearn": "This technique covers GitHub Actions workflows, triggers, jobs, steps, and actions. You'll set up a CI pipeline that runs tests on every pull request and deploys to Vercel on merge to main.",
+      "quote": "Sensei: an advanced technique. Automate the repetitive — focus on the creative.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "70",
+    "title": "Git Hooks with Husky",
+    "tagline": "Run linting and tests automatically before every commit.",
+    "source": "typicode.github.io",
+    "source_link": "https://typicode.github.io/husky/",
+    "rank": "sensei",
+    "training_time": 30,
+    "category": "git",
+    "content": {
+      "description": "Git hooks let you run scripts at key points in the Git workflow. Husky makes setting them up in a Node.js project effortless.",
+      "whatYouLearn": "This technique covers pre-commit and commit-msg hooks, setting up Husky, running ESLint and Prettier before commits, and enforcing conventional commit messages with commitlint.",
+      "quote": "Sensei: an advanced technique. The gate that catches errors before they enter is worth a thousand code reviews.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "71",
     "title": "Node.js Official Getting Started",
     "tagline": "Run JavaScript on the server — set up your first Node.js project today.",
     "source": "nodejs.org",
@@ -206,13 +1138,13 @@
     "category": "nodejs",
     "content": {
       "description": "JavaScript was born in the browser. Node.js set it free. With Node, the same language you use to build interfaces can now power servers, CLIs, and APIs.",
-      "whatYouLearn": "This technique introduces the Node.js runtime — how it differs from browser JavaScript, how to run scripts, work with modules, and understand the Node ecosystem. It is the first step on the backend path.",
+      "whatYouLearn": "This technique introduces the Node.js runtime — how it differs from browser JavaScript, how to run scripts, work with modules, and understand the Node ecosystem.",
       "quote": "Kohai: a beginner technique. The server is just another dojo. Enter with an open mind.",
       "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
     }
   },
   {
-    "id": "14",
+    "id": "72",
     "title": "Build a REST API with Express.js",
     "tagline": "Create your first backend API with routes, middleware, and JSON responses.",
     "source": "expressjs.com",
@@ -222,14 +1154,14 @@
     "category": "nodejs",
     "isFeatured": true,
     "content": {
-      "description": "Express is the minimalist framework that powers millions of Node.js APIs. It gets out of your way and lets you build — which means you need to understand what you are building.",
-      "whatYouLearn": "This technique walks you through building a REST API from scratch — defining routes, handling HTTP methods, writing middleware, and returning JSON responses. By the end, you'll have a working API and the vocabulary to discuss backend architecture.",
+      "description": "Express is the minimalist framework that powers millions of Node.js APIs. It gets out of your way and lets you build.",
+      "whatYouLearn": "This technique walks you through building a REST API from scratch — defining routes, handling HTTP methods, writing middleware, and returning JSON responses.",
       "quote": "Senpai: an intermediate technique. The frontend asks. The backend answers. Learn to give good answers.",
       "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
     }
   },
   {
-    "id": "15",
+    "id": "73",
     "title": "JWT Authentication Explained",
     "tagline": "Secure your API with JSON Web Tokens — from theory to implementation.",
     "source": "jwt.io",
@@ -237,11 +1169,42 @@
     "rank": "sensei",
     "training_time": 45,
     "category": "nodejs",
-    "isFeatured": true,
     "content": {
-      "description": "Authentication is the gatekeeper of your application. JWT is the most widely used stateless authentication mechanism in modern APIs — and understanding it is non-negotiable for full-stack developers.",
-      "whatYouLearn": "This technique covers the anatomy of a JSON Web Token — header, payload, and signature. You'll learn how tokens are issued, verified, and invalidated, and why stateless authentication scales better than session-based approaches.",
+      "description": "Authentication is the gatekeeper of your application. JWT is the most widely used stateless authentication mechanism in modern APIs.",
+      "whatYouLearn": "This technique covers the anatomy of a JSON Web Token — header, payload, and signature. You'll learn how tokens are issued, verified, and invalidated.",
       "quote": "Sensei: an advanced technique. Security is not a feature you add later. It is a discipline you practice from the beginning.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "74",
+    "title": "Environment Variables & .env Files",
+    "tagline": "Keep secrets out of your code with environment variables.",
+    "source": "developer.mozilla.org",
+    "source_link": "https://nodejs.org/en/learn/command-line/how-to-read-environment-variables-from-nodejs",
+    "rank": "kohai",
+    "training_time": 20,
+    "category": "nodejs",
+    "content": {
+      "description": "API keys, database credentials, and secrets have no place in your source code. Environment variables are the industry standard for keeping them safe.",
+      "whatYouLearn": "This technique covers process.env, .env files with dotenv, .gitignore for secrets, and environment-specific configuration for development and production.",
+      "quote": "Kohai: a beginner technique. What is secret should remain secret — especially from your Git history.",
+      "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
+    }
+  },
+  {
+    "id": "75",
+    "title": "Node.js fs Module & File System",
+    "tagline": "Read, write, and manage files programmatically with Node.js.",
+    "source": "nodejs.org",
+    "source_link": "https://nodejs.org/api/fs.html",
+    "rank": "senpai",
+    "training_time": 35,
+    "category": "nodejs",
+    "content": {
+      "description": "Node.js gives JavaScript the power to interact with the file system — reading configs, writing logs, processing uploads, and more.",
+      "whatYouLearn": "This technique covers fs.readFile, fs.writeFile, fs.readdir, streams, and the difference between synchronous and asynchronous file operations. You'll build a simple file-based data store.",
+      "quote": "Senpai: an intermediate technique. The server that reads and writes is a server that remembers.",
       "pathForward": "Open the source link to begin training. When you finish, return here and save the scroll — the way of the Ronin is to keep your collection tight, intentional, and revisitable."
     }
   }

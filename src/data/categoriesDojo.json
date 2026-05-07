@@ -21,6 +21,27 @@
     "icon": "🎨"
   },
   {
+    "slug": "html",
+    "name": "HTML Dojo",
+    "tagline": "The foundation of everything on the web.",
+    "description": "Semantic structure, accessibility, forms, and performance. HTML is not just markup — it is the skeleton of every interface you will ever build.",
+    "icon": "📄"
+  },
+  {
+    "slug": "typescript",
+    "name": "TypeScript Dojo",
+    "tagline": "JavaScript with a safety net.",
+    "description": "Types, interfaces, generics, and utility types. Write code that catches bugs before runtime and documents itself — the way professional teams do.",
+    "icon": "🔷"
+  },
+  {
+    "slug": "git",
+    "name": "Git Dojo",
+    "tagline": "Master the time machine of software.",
+    "description": "Branching, merging, rebasing, and collaboration. Git is not just version control — it is the language of professional software development.",
+    "icon": "🌿"
+  },
+  {
     "slug": "nodejs",
     "name": "Node.js Dojo",
     "tagline": "Bring JavaScript to the server.",

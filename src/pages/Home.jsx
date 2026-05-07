@@ -5,14 +5,14 @@ import categoriesDojo from '../data/categoriesDojo.json'
 import ScrollCard from '../components/ScrollCard'
 
 function Home({bookmarks,  onBookmark}){
-    // console.log(data)
     const featured = data.filter(resource => resource.isFeatured)
     const categories = categoriesDojo
     return(
         <main className='bg-bg h-full px-8 flex flex-col gap-3 '>
             <Hero 
             dojosCount={categories.length}
-            techniquesCount={data.length}/>
+            techniquesCount={data.length}
+            bookmarksCount={bookmarks.length}/>
             <section className='px-2 md:px-8 flex flex-col gap-3'>
                 <div className='border-edge border-b pb-4 flex flex-col md:flex-row justify-between px-4 gap-2'>
                     <h2 className=' font-main text-xl md:text-2xl font-medium'><span className='font-bold text-accent'> — </span> Choose your dojo <span className='font-light text-ink-faint'>道場</span></h2>

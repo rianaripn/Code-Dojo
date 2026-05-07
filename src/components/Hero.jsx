@@ -1,4 +1,4 @@
-function Hero({dojosCount, techniquesCount}){
+function Hero({dojosCount, techniquesCount, bookmarksCount}){
     return(
         <section className="py-8 md:py-12 mx-4 md:mx-12">
             <div className="flex flex-col gap-6 max-w-full md:max-w-1/2">
@@ -23,7 +23,7 @@ function Hero({dojosCount, techniquesCount}){
                         <p className="font-mono tracking-widest text-ink-faint pt-1 text-xs md:text-sm">TECHNIQUES</p>
                     </div>
                     <div>
-                        <h2 className="font-main font-bold text-xl">0</h2>
+                        <h2 className="font-main font-bold text-xl">{bookmarksCount}</h2>
                         <p className="font-mono tracking-widest text-ink-faint pt-1 text-xs md:text-sm">IN YOUR SCROLLS</p>
                     </div>
                 </div>
